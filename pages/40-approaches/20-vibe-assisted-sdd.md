@@ -1,42 +1,24 @@
 ---
-layout: default
-zoom: 0.92
+layout: image-left
+image: /pptx/vibe-vs-assisted.png
+backgroundSize: contain
+zoom: 0.95
 ---
 
 <div class="lang-uk">
 
 # Підходи: від vibe coding до SDD
 
-<div class="grid grid-cols-2 gap-6 mt-2 text-[0.92em]">
+<div class="mt-3 text-[0.95em]">
 
-<div>
-
-### Vibe coding
-- «Пиши що хочу» без чіткого плану й перевірки
-- Швидко для прототипів, **небезпечно** для продакшену
-
-### AI-assisted
-- Людина веде, AI прискорює; рев'ю обов'язковий
-- Робочий стандарт для більшості команд
+- **Vibe coding** — без чіткого плану й перевірки: швидко для прототипів, **небезпечно** для продакшену
+- **AI-assisted** — людина веде, AI прискорює, рев'ю обов'язкове; **щоденний стандарт**
+- **Spec Driven Development (SDD)** — `spec-first` → `spec-anchored` → `spec-as-source`
+- **Multi-agent** — спеціалізовані агенти (PM, Architect, Dev, QA): потужно, але складніше керувати
 
 </div>
 
-<div>
-
-### Spec Driven Development (SDD)
-- **Spec-first** → spec у workflow для задачі
-- **Spec-anchored** → spec живе після задачі, для еволюції
-- **Spec-as-source** → spec головне джерело, людина не чіпає код
-
-### Multi-agent
-- Кілька спеціалізованих агентів (PM, Architect, Dev, QA)
-- Потужно, але складніше керувати
-
-</div>
-
-</div>
-
-<div class="mt-3 text-sm opacity-80">Деталі SDD/BMAD — Воркшоп 7; мульти-агент — теж далі в курсі.</div>
+<div class="mt-3 text-sm opacity-80">Деталі SDD/BMAD та мульти-агент — Воркшоп 7.</div>
 
 </div>
 
@@ -44,43 +26,23 @@ zoom: 0.92
 
 # Approaches: from vibe coding to SDD
 
-<div class="grid grid-cols-2 gap-6 mt-2 text-[0.92em]">
+<div class="mt-3 text-[0.95em]">
 
-<div>
-
-### Vibe coding
-- "Just build what I want" with no clear plan or checks
-- Fast for prototypes, **risky** for production
-
-### AI-assisted
-- Human leads, AI accelerates; review is mandatory
-- The working standard for most teams
+- **Vibe coding** — no clear plan or checks: fast for prototypes, **risky** for production
+- **AI-assisted** — human leads, AI accelerates, review is mandatory; **the daily standard**
+- **Spec Driven Development (SDD)** — `spec-first` → `spec-anchored` → `spec-as-source`
+- **Multi-agent** — specialized agents (PM, Architect, Dev, QA): powerful, but harder to control
 
 </div>
 
-<div>
-
-### Spec Driven Development (SDD)
-- **Spec-first** → spec drives the task's workflow
-- **Spec-anchored** → spec lives on for evolution
-- **Spec-as-source** → spec is the main source, human never touches code
-
-### Multi-agent
-- Several specialized agents (PM, Architect, Dev, QA)
-- Powerful, but harder to control
-
-</div>
-
-</div>
-
-<div class="mt-3 text-sm opacity-80">SDD/BMAD details — Workshop 7; multi-agent — also later in the course.</div>
+<div class="mt-3 text-sm opacity-80">SDD/BMAD and multi-agent details — Workshop 7.</div>
 
 </div>
 
 <!--
-Speaker note: ~2 хв. Спектр контролю. Vibe coding — ок для гри, не для банку.
-AI-assisted — щоденний стандарт. SDD — дисципліна. Дати визначення трьох рівнів
-SDD дослівно (spec-first/anchored/as-source). Глибше — у Воркшопі 7.
+Speaker note: ~2 хв. Спектр контролю зліва направо (картинка): vibe coding —
+ок для гри, не для банку; AI-assisted — щоденний стандарт; SDD — дисципліна
+зі специфікаціями. Три рівні SDD дослівно. Глибше — Воркшоп 7.
 Time cue: ~2 хв
-Mapping: PPTX slides 44-47
+Mapping: PPTX slides 44-47 (+ quadrant slide 45)
 -->

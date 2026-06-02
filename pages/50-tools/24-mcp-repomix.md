@@ -1,35 +1,27 @@
 ---
-layout: default
+layout: image-left
+image: /pptx/repomix.png
+backgroundSize: contain
+zoom: 0.95
 ---
 
 <div class="lang-uk">
 
 # MCP та Repomix — коротко
 
-<div class="grid grid-cols-2 gap-8 mt-4 text-[0.95em]">
+<div class="mt-2 text-[0.95em]">
 
-<div>
+**MCP (Model Context Protocol)**
+- Стандарт **контрольованого доступу** агента до зовнішнього світу: tools, resources, prompts
+- Приклади: filesystem, GitHub, context7, БД · безпека: скоупи, секрети в env, pinning
 
-### MCP (Model Context Protocol)
-- Стандарт, що дає агенту **контрольований доступ** до зовнішнього світу
-- Tools, resources, prompts; транспорти stdio / HTTP
-- Приклади: filesystem, GitHub, context7, бази даних
-- Безпека: скоупи, секрети в env, version pinning
-
-</div>
-
-<div>
-
-### Repomix
+**Repomix**
 - `npx repomix` пакує репозиторій в **один файл** для LLM
-- Зручно «згодувати» проєкт моделі чи порахувати токени
-- Допомагає **curate** контекст, а не дампити все
+- Зручно «згодувати» проєкт моделі й **порахувати токени** — curate, не dump
 
 </div>
 
-</div>
-
-<div class="mt-4 text-sm opacity-80">MCP детально — Воркшоп 6. Сьогодні — лише знайомство.</div>
+<div class="mt-3 text-sm opacity-80">MCP детально — Воркшоп 6. Сьогодні — знайомство.</div>
 
 </div>
 
@@ -37,36 +29,26 @@ layout: default
 
 # MCP and Repomix — briefly
 
-<div class="grid grid-cols-2 gap-8 mt-4 text-[0.95em]">
+<div class="mt-2 text-[0.95em]">
 
-<div>
+**MCP (Model Context Protocol)**
+- A standard for the agent's **controlled access** to the outside world: tools, resources, prompts
+- Examples: filesystem, GitHub, context7, DBs · security: scopes, secrets in env, pinning
 
-### MCP (Model Context Protocol)
-- A standard that gives the agent **controlled access** to the outside world
-- Tools, resources, prompts; stdio / HTTP transports
-- Examples: filesystem, GitHub, context7, databases
-- Security: scopes, secrets in env, version pinning
-
-</div>
-
-<div>
-
-### Repomix
+**Repomix**
 - `npx repomix` packs a repo into **a single file** for an LLM
-- Handy to "feed" a project to a model or count tokens
-- Helps you **curate** context instead of dumping everything
+- Handy to "feed" a project to a model and **count tokens** — curate, don't dump
 
 </div>
 
-</div>
-
-<div class="mt-4 text-sm opacity-80">MCP in depth — Workshop 6. Today is just an intro.</div>
+<div class="mt-3 text-sm opacity-80">MCP in depth — Workshop 6. Today is just an intro.</div>
 
 </div>
 
 <!--
 Speaker note: ~1.5 хв. Лише знайомство — повний MCP-воркшоп попереду. Repomix
 покажу в практиці для підрахунку токенів. Підкреслити безпеку MCP (скоупи).
+Картинка — landing Repomix.
 Time cue: ~1.5 хв
 Mapping: PPTX slides 56-58
 -->

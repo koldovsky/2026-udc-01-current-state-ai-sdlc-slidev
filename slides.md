@@ -77,6 +77,10 @@ src: ./pages/10-evolution/07-ai-ml-primer.md
 ---
 
 ---
+src: ./pages/10-evolution/07b-ai-taxonomy.md
+---
+
+---
 src: ./pages/10-evolution/08-tool-collaborator-agent.md
 ---
 
