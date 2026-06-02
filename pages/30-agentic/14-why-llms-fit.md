@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: image-left
+image: /pptx/llm-training.png
+backgroundSize: contain
 ---
 
 <div class="lang-uk">

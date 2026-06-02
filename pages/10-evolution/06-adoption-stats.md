@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: image-left
+image: /pptx/adoption-ai-tools.png
+backgroundSize: contain
 ---
 
 <div class="lang-uk">

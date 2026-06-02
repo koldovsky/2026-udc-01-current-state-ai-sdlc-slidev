@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: image-left
+image: /pptx/needle-haystack.png
+backgroundSize: contain
 ---
 
 <div class="lang-uk">

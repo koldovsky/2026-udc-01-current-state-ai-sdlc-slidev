@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: image-left
+image: /pptx/evolution-ai.png
+backgroundSize: contain
 ---
 
 <div class="lang-uk">
