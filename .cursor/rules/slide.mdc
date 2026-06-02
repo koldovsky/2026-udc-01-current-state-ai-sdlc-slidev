@@ -1,0 +1,72 @@
+---
+description: Conventions for writing slides in this Slidev deck (slides.md, pages/*.md)
+globs: slides.md, pages/**/*.md
+alwaysApply: false
+---
+
+# Slide writing conventions
+
+This rule applies to `slides.md` and any `pages/**/*.md` (Slidev source files).
+
+## Language
+
+- Primary language is **Ukrainian**.
+- On the first mention of a key technical term, add the **English term in
+  parentheses**: e.g., "обмежений контекст (bounded context)", "інкремент
+  (increment)", "специфікація (spec)".
+- Keep code snippets and CLI commands in English.
+
+## Slide density
+
+- Aim for **5–7 bullets max** per slide. If a list is longer, either:
+  - split into multiple slides, or
+  - wrap with `<v-clicks>` to reveal progressively.
+- Keep code snippets ≤ 20 lines per slide. Use `{1|2|3}` Slidev line-by-line
+  reveal for long code.
+- Mark dense slides with `zoom: 0.78` (or 0.86 for medium) in YAML frontmatter.
+
+## Frontmatter discipline
+
+- Every non-trivial slide has its own `---`-delimited YAML frontmatter.
+- Keep `background:` and `layout:` in the **same** frontmatter block (a
+  separated `layout:` block loses the parent `background`).
+- `zoom:` MUST be inside YAML, never in the slide body or after a speaker note.
+
+## Notes & sources
+
+- Put long explanations and citations into HTML comments at the end of the
+  slide:
+
+  ```markdown
+  <!--
+  Speaker note: emphasize that capability slicing is the unit of agentic work.
+  Source: https://steipete.me/posts/2025/shipping-at-inference-speed
+  -->
+  ```
+
+- Do not paste raw long URLs onto the slide body — link with markdown:
+  `[programmingmentor](https://www.youtube.com/c/programmingmentorua)`.
+
+## Visuals
+
+- Prefer **Mermaid** diagrams (see `.cursor/skills/visuals-mermaid`) over new
+  raster images.
+- Reference public assets with leading `/` (e.g. `image: /vyacheslav-koldovskyy.png`
+  resolves to `public/vyacheslav-koldovskyy.png`).
+
+## Layouts available in this deck
+
+- `default` — DOU dark background, regular slide.
+- `image-left` — `image:` on the left half.
+- `image-left-bg-color` — image-left with overridable background color.
+- `image` — full-bleed image background.
+- `center` — centered content.
+- `cover` — Slidev built-in title cover (uses slide-level `background:`).
+- `section` — Slidev built-in section divider.
+- `end` — Slidev built-in closing slide.
+
+## Verify after editing
+
+After non-trivial edits, run `npm run build` (see
+`.cursor/skills/slidev-build-verify`) and fix any errors before declaring
+done.

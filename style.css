@@ -1,0 +1,40 @@
+/* ===========================================================================
+   Slide background — dark gradient suitable for light text.
+   Replaces the DOU-branded background image. Applies to built-in layouts
+   (cover / section / end); custom layouts in layouts/ set the same gradient
+   inline so the look is uniform across the deck.
+   =========================================================================== */
+:root {
+  --ia-bg:
+    radial-gradient(circle at 22% 18%, #1c2540 0%, rgba(28, 37, 64, 0) 55%),
+    linear-gradient(135deg, #0f1422 0%, #070a12 100%);
+}
+
+.slidev-layout {
+  background: var(--ia-bg);
+  background-attachment: fixed;
+}
+
+/* ===========================================================================
+   Bilingual content (UK default / EN toggle).
+   Each slide keeps both languages side by side:
+     <div class="lang-uk"> …український контент… </div>
+     <div class="lang-en"> …english content… </div>
+   The LangSwitch button (global-top.vue, top-right) toggles `lang-en-on` on
+   <html>. Default = UK (no class), so a PDF export / fresh load shows Ukrainian.
+   =========================================================================== */
+/* `display: contents` lets the wrapper disappear from layout so its children
+   render naturally — works for both block wrappers (<div>) and inline spans
+   used inside list items / headings (e.g. slide 7's single <v-clicks>). */
+.lang-uk {
+  display: contents;
+}
+.lang-en {
+  display: none;
+}
+html.lang-en-on .lang-uk {
+  display: none;
+}
+html.lang-en-on .lang-en {
+  display: contents;
+}

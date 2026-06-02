@@ -1,0 +1,15 @@
+# Dependencies & build output
+node_modules
+dist
+.vite-inspect
+components.d.ts
+
+# Slidev source — DO NOT format.
+# Prettier mangles slide separators (`---`), the per-slide YAML frontmatter,
+# the inline bilingual <span class="lang-uk/lang-en"> lines, and mermaid code
+# blocks — which silently breaks the deck. Keep these out of any formatter.
+slides.md
+pages/
+
+# Generated / static assets (incl. the QR + logo)
+public/

@@ -1,0 +1,27 @@
+{
+  "name": "2026-udc-01-current-state-ai-sdlc-slidev",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build:gh-pages": "slidev build --base /2026-udc-01-current-state-ai-sdlc-slidev/",
+    "dev": "slidev --open",
+    "export": "slidev export --per-slide --format pdf",
+    "qr": "node scripts/gen-qr.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "qrcode": "^1.5.4"
+  },
+  "overrides": {
+    "vite": "8.0.11"
+  }
+}
