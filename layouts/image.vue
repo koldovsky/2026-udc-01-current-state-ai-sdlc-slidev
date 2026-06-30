@@ -23,7 +23,7 @@ const style = computed(() => handleBackground(props.image, false, props.backgrou
     class="slidev-layout"
     :class="props.class"
     :style="style"
-    style="position: relative; overflow: hidden"
+    style="position: relative; overflow-y: auto"
   >
     <!-- Apply global background gradient -->
     <div

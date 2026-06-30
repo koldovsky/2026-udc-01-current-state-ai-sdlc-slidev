@@ -38,3 +38,26 @@ html.lang-en-on .lang-uk {
 html.lang-en-on .lang-en {
   display: contents;
 }
+
+/* ===========================================================================
+   Long-content slides — scrollable instead of clipped.
+   Slidev clips slide content by default (the SlideContainer wrapper has
+   overflow-hidden). Dense tables/bullet lists at low zoom can still exceed
+   the 980x552 canvas; this lets the presenter scroll instead of silently
+   losing content off the bottom of the slide.
+   =========================================================================== */
+.slidev-layout.default,
+.slidev-layout.center {
+  overflow-y: auto;
+}
+
+/* Subtle scrollbar so it is not jarring on the dark background while recording. */
+.slidev-layout.default::-webkit-scrollbar,
+.slidev-layout.center::-webkit-scrollbar {
+  width: 6px;
+}
+.slidev-layout.default::-webkit-scrollbar-thumb,
+.slidev-layout.center::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
