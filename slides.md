@@ -36,12 +36,12 @@ layout: cover
 
 <div class="lang-uk">
   <div class="mt-2 text-lg opacity-80">
-    В'ячеслав Колдовський &nbsp;·&nbsp; Воркшоп 1 &nbsp;·&nbsp; весна 2026 &nbsp;·&nbsp; онлайн (Zoom)
+    В'ячеслав Колдовський &nbsp;·&nbsp; Воркшоп 1 &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; онлайн (Zoom)
   </div>
 </div>
 <div class="lang-en">
   <div class="mt-2 text-lg opacity-80">
-    Vyacheslav Koldovskyy &nbsp;·&nbsp; Workshop 1 &nbsp;·&nbsp; spring 2026 &nbsp;·&nbsp; online (Zoom)
+    Vyacheslav Koldovskyy &nbsp;·&nbsp; Workshop 1 &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; online (Zoom)
   </div>
 </div>
 
