@@ -1,13 +1,43 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
-// Bilingual toggle. Default = UK (no class on <html>). Clicking EN adds
+// Bilingual toggle. Default = UK (no class on <html>). Turning EN on adds
 // `lang-en-on`, which style.css uses to swap .lang-uk / .lang-en blocks.
+//
+// The choice is linkable: open the deck with `?lang=en` and it starts in
+// English, so a link can point straight at the English version without the
+// reader touching the switcher. It is remembered in sessionStorage rather
+// than localStorage on purpose — it survives moving between slides (Slidev
+// drops the query string when it navigates) but does NOT leak into a later
+// tab, so a plain link still opens in Ukrainian for presenting.
 const en = ref(false);
-function setLang(toEn) {
+
+function apply(toEn) {
   en.value = toEn;
   document.documentElement.classList.toggle("lang-en-on", toEn);
 }
+
+function setLang(toEn) {
+  apply(toEn);
+  try {
+    sessionStorage.setItem("udc-lang", toEn ? "en" : "uk");
+  } catch {
+    // private mode / storage disabled — the toggle still works for this view
+  }
+}
+
+onMounted(() => {
+  let toEn = false;
+  try {
+    const q = new URLSearchParams(window.location.search).get("lang");
+    if (q === "en") toEn = true;
+    else if (q === "uk") toEn = false;
+    else toEn = sessionStorage.getItem("udc-lang") === "en";
+  } catch {
+    toEn = false;
+  }
+  if (toEn) setLang(true);
+});
 </script>
 
 <template>
