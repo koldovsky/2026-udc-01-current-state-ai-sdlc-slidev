@@ -17,8 +17,15 @@ fonts:
 layout: cover
 ---
 
+<div class="lang-uk">
 <div class="text-5xl font-bold mt-10 leading-tight drop-shadow-lg">
   Сучасний стан розробки з AI
+</div>
+</div>
+<div class="lang-en">
+<div class="text-5xl font-bold mt-10 leading-tight drop-shadow-lg">
+  The Current State of AI Development
+</div>
 </div>
 
 <div class="lang-uk">
